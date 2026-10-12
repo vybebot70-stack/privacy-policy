@@ -16,10 +16,15 @@
         </a>
 
         <nav class="main-nav" aria-label="Help and FEM Swap navigation">
-          <span class="nav-section-title">FEM Help</span>
-          <a href="index.html">Home</a><a href="faq.html">FAQs</a><a href="security.html">Security</a><a href="about.html">About</a><a href="support.html">Support</a><a href="privacy-policy.html">Privacy</a><a href="terms-of-service.html" aria-current="page">Terms</a>
-          <span class="nav-section-title">FEM Swap</span>
-          <a href="https://swap.femchain.online/">Open FEM Swap</a><a href="femswap-faq.html">Swap FAQs</a><a href="femswap-support.html">Swap Support</a><a href="femswap-privacy-policy.html">Swap Privacy</a><a href="femswap-terms.html">Swap Terms</a>
+          <a class="nav-home" href="index.html">Help Home</a>
+          <details class="nav-group" open>
+            <summary>FEM App</summary>
+            <div class="nav-submenu"><a href="faq.html">FAQs</a><a href="security.html">Security</a><a href="about.html">About</a><a href="support.html">Support</a><a href="privacy-policy.html">Privacy</a><a href="terms-of-service.html" aria-current="page">Terms</a></div>
+          </details>
+          <details class="nav-group nav-group--swap">
+            <summary>FEM Swap</summary>
+            <div class="nav-submenu"><a href="https://swap.femchain.online/">Open Swap</a><a href="femswap-faq.html">FAQs</a><a href="femswap-support.html">Support</a><a href="femswap-privacy-policy.html">Privacy</a><a href="femswap-terms.html">Terms</a></div>
+          </details>
         </nav>
       </div>
     </header>
