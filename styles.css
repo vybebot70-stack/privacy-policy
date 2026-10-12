@@ -476,6 +476,30 @@ h1 {
   color: var(--primary-soft);
 }
 
+.faq-list details {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-list details:first-child {
+  padding-top: 0;
+}
+
+.faq-list summary {
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.faq-list summary:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 5px;
+}
+
+.faq-list details p {
+  margin: 12px 0 0;
+}
+
 .help-feedback {
   margin-top: 28px;
   padding: 18px 20px;
