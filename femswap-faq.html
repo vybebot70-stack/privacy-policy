@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FEM Swap FAQs</title>
+    <meta name="description" content="Frequently asked questions about FEM Swap, wallet connections, swaps, fees, privacy, and safety." />
+    <link rel="canonical" href="https://help.femchain.online/femswap-faq.html" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="FEM Wallet help home"><img src="fem_image.png" alt="FEM Wallet logo" class="brand-logo" /></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Help Home</a><a href="https://swap.femchain.online/">FEM Swap</a><a href="femswap-privacy-policy.html">Swap Privacy</a><a href="femswap-terms.html">Swap Terms</a><a href="femswap-faq.html" aria-current="page">Swap FAQs</a><a href="femswap-support.html">Swap Support</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-shell">
+      <div class="container">
+        <article class="legal-wrap">
+          <header class="legal-hero"><span class="eyebrow">FEM Swap · FAQs</span><h1>Frequently asked questions</h1><p>General answers for using a Uniswap V2-style swap interface.</p></header>
+          <div class="legal-body faq-list">
+            <details><summary>What is FEM Swap?</summary><p>FEM Swap is a web interface based on a fork of Uniswap V2. The upstream V2 design uses token-pair pools and constant-product pricing, but FEM’s own contracts, supported networks, tokens, and changes may differ. See the <a href="https://github.com/Uniswap/docs/blob/1c7597d73be0e9a3a4e44aa75b8fb212b40ea136/archive/docs/contracts/v2/overview.md" target="_blank" rel="noopener noreferrer">Uniswap V2 technical overview</a> for upstream background, and verify FEM’s deployed contracts before interacting.</p></details>
+            <details><summary>Does FEM Swap hold my tokens?</summary><p>A wallet-connected swap interface generally does not custody your assets; your wallet authorizes transactions. Confirm the actual behavior of the live app and never share your recovery phrase or private key with anyone.</p></details>
+            <details><summary>Why can the received amount differ from the quote?</summary><p>Quotes are estimates and can change with price movements, liquidity, transaction ordering, slippage settings, network conditions, and pool or contract behavior. Review the minimum received and all transaction details in your wallet before approving.</p></details>
+            <details><summary>What fees might I pay?</summary><p>A swap can involve a pool trading fee and a blockchain network gas fee. The interface or protocol may also charge a separate fee if the FEM deployment enables one. Standard Uniswap V2 pair code uses a 0.30% swap fee and the factory supports a configurable protocol-fee mechanism, but that does not establish FEM’s fee settings or recipients. Check the FEM deployment and your wallet transaction before confirming.</p></details>
+            <details><summary>What do slippage and transaction deadlines mean?</summary><p>Slippage is the difference between an expected quote and the execution price as pool conditions change. The original V2 router supports a minimum-output amount and a deadline for swap calls; FEM may use different contracts, settings, or interface defaults. Review the minimum received, deadline, and transaction details in your wallet before approving.</p></details>
+            <details><summary>Can a confirmed transaction be reversed?</summary><p>Blockchain transactions are generally irreversible after confirmation. Check the network, token, recipient, amount, and contract details before approving. Support cannot reverse a confirmed transaction.</p></details>
+            <details><summary>What information is public?</summary><p>Wallet addresses and confirmed transactions on public blockchains can be visible to anyone using that network. Wallet providers and node or RPC services may also process technical request data. See the <a href="femswap-privacy-policy.html">FEM Swap Privacy Policy</a>; its provider details should be checked against the live app.</p></details>
+            <details><summary>Is FEM Swap audited or guaranteed safe?</summary><p>A Uniswap V2 fork is not proof that FEM Swap’s code, changes, or deployments have been audited. Do not assume an audit, security guarantee, or affiliation unless FEM publishes verifiable information. Smart-contract and token risks remain.</p></details>
+            <details><summary>What should I send to support?</summary><p>You may include the relevant network, public transaction hash, app/browser details, and a description of the issue. Never send a recovery phrase, private key, wallet password, or one-time code. Contact <a href="femswap-support.html">FEM Swap support</a>.</p></details>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="footer"><div class="container footer-inner"><div>© 2026 FEM Swap · <a href="mailto:femwallet@gmail.com">Support</a></div><div><a href="index.html">Help Home</a> · <a href="femswap-privacy-policy.html">Swap Privacy</a> · <a href="femswap-terms.html">Swap Terms</a> · <a href="femswap-support.html">Swap Support</a></div></div></footer>
+  </body>
+</html>
