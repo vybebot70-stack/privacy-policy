@@ -154,12 +154,12 @@ img { max-width: 100%; }
   border-right: 1.5px solid var(--muted);
   border-bottom: 1.5px solid var(--muted);
   content: "";
-  transform: rotate(45deg) translateY(-2px);
+  transform: rotate(-45deg) translateY(-2px);
   transition: transform 0.18s ease;
 }
 
 .nav-group[open] summary::after {
-  transform: rotate(225deg) translate(-2px, -1px);
+  transform: rotate(45deg) translate(-2px, -1px);
 }
 
 .nav-group summary:hover,
